@@ -1,0 +1,119 @@
+TASK 1 — Complete Test Cases for Login, Registration & OTP Verification.
+
+Day 1 : Requirement Breakdown + Test Coverage Design
+
+Goal : what test need to be done , how to map the flow of the system correctly . 
+
+Reference UI visit 
+Login-Registration-OTP flow map
+Boundary , negative , security test condition identify 
+test case matrix draft
+
+
+Step1 : REFERENCE URL OVESERVE
+
+Visit Registration page in Reference URL https://otp-verified-login.lovable.app/register
+
+Flow 01: Registration page 
+
+Name field
+E-mail field
+Password
+Registration button
+OTP screen redirect 
+
+Flow 02: Log In
+
+Email/phone field 
+password
+Login --> OTP page
+
+Flow 03:OTP verification 
+
+OTP input (6 digit)
+Resend OTP
+Verify
+
+
+Step 2:System Requirement Breakdown 
+
+Registration Requirements :
+
+user must provide valid email or phone
+password must be strong
+Duplicates email not allowed 
+Successfully registration --> OTP send
+
+
+Login Requirement :
+
+Valid Credentials 
+Wrong password shows error
+
+OTP Requirements:
+
+Valid numeric OTP
+OTP expires in  minutes
+OTP resend
+same OTP use
+
+Step 3: Identify All Possible Test Conditions
+
+Break into categories:
+
+Functional
+Negative
+Boundary
+Security
+Usability
+
+Registration Conditions
+
+ Valid email accepted
+ Invalid email rejected
+ Duplicate email error
+ Weak password validation
+ Mandatory fields required
+ OTP triggered after registration
+
+Login Conditions
+ Valid login success
+ Wrong password -> error
+ Unregistered email -> error
+ Password must be case sensitive
+ Account lock after failed attempts
+
+OTP Conditions
+ Only numeric input allowed
+ OTP length must be fixed
+ Expired OTP -> error
+ Incorrect OTP -> error
+ OTP resend allowed after 120 sec
+ OTP cannot be reused
+
+
+
+Step 5: Create Test Case Table Structure
+
+create column :
+
+TC ID
+Module 
+Scenario
+Pre-condition 
+Steps 
+Expected Result 
+Type
+
+
+Note : Tomorrow will just fill in the scenario.
+
+
+DAY SUMMARY 
+
+UI study
+all flows complete 
+requirement extract 
+test condition identified
+test case table structure created
+clockify tasks 
